@@ -14,9 +14,9 @@ export default function ContactUs() {
         <div className="lg:col-span-4 space-y-8">
           <div className="bg-surface-container-low p-8 rounded-2xl space-y-8">
             {[
-              { icon: 'location_on', title: 'Global HQ', detail: '888 Innovation Drive,\nSilicon Valley, CA 94025' },
-              { icon: 'alternate_email', title: 'Email Us', detail: 'hello@looplab.io\nresearch@looplab.io' },
-              { icon: 'call', title: 'Phone', detail: '+1 (555) 000-LABS' },
+              { icon: 'location_on', title: 'Global HQ', detail: 'No. 74/1, Neelammahara,\nButhpitiya, Mahara' },
+              { icon: 'alternate_email', title: 'Email Us', detail: 'looplab888@gmail.com' },
+              { icon: 'call', title: 'Phone', detail: '+94 764146712' },
             ].map((item) => (
               <div key={item.title} className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center text-primary ambient-shadow">
@@ -70,18 +70,13 @@ export default function ContactUs() {
 
       <section className="mt-24">
         <div className="relative w-full h-[500px] rounded-2xl overflow-hidden ambient-shadow bg-surface-container-low">
-          <div className="absolute inset-0 grayscale opacity-40 hover:grayscale-0 transition-all duration-700">
-            <img alt="Map" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBP4v5kDJkq807eI-PeiSJPIFeyHykgLAg6-OWfkKboUuCi50gYq70tS8EL5HYhHm8wXxnj8ap8fRcBcNBExRlB0hgT2B_aftQEEFdH0ULp0wIPslH-YbW_LkdQKjjYeQ0gA5hPnV78c1wmf0k-7q8LraQwEUCXkk0osQTjp27z_1m_ijK4nPmqRkAh1Gs6yzUa0yZA_Bze0oTVgNGu4aTSJEsx6RAUmJ_UzwLKTVvE2FD0VhRChaRGCc-SzUp7LMKwCcSfYidbKCA" />
-          </div>
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="bg-surface-container-lowest/80 backdrop-blur-md p-6 rounded-2xl ambient-shadow text-center">
-              <div className="w-16 h-16 ethereal-gradient rounded-full flex items-center justify-center mx-auto mb-4 text-on-primary">
-                <span className="material-symbols-outlined text-3xl">my_location</span>
-              </div>
-              <h4 className="font-headline font-bold text-xl mb-1">Find Us Here</h4>
-              <p className="text-on-surface-variant text-sm">LoopLab Research Campus</p>
-            </div>
-          </div>
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63383.769104953535!2d79.8416537046432!3d6.832234802946894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25bbec8dcb3cf%3A0xc4098ad103334b6b!2sLoopLab!5e0!3m2!1sen!2slk!4v1775747899895!5m2!1sen!2slk" 
+            className="w-full h-full border-0 grayscale hover:grayscale-0 transition-all duration-1000" 
+            allowFullScreen="" 
+            loading="lazy" 
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </section>
     </main>

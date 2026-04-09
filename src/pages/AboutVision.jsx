@@ -90,7 +90,7 @@ export default function AboutVision() {
             {[
               { name: 'S. H. Dinusha Madhujith', role: 'Chief Executive Officer & Founder', img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBmfwkVdLVcA9oslGzO4J8KlT6otnB-3upSIqrP-5a96DzUkQIairPZA9hCBcYygX-sNrj5UiEOFbqXOVmvKLQj8x-2TH995fW5Tc2_JaETlq2AqjJkyosOiQpFspd4bYh3mv23QmWczcnhOwTA-gkyJI4k9llrQb6xejbs6KwFwPz6WYa0iWlo_nVrBYTxa5InBN6xK9zWxM1JCk0LEZItnemUxSHuDeEG41hhxQaz3hwW14fb2Mkzkt4jwtJo3W_Qj9obH9KgJRM' },
               { name: 'W. Pawani Nimasha', role: 'Director of Social Impact & Founder', img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBnSGjZ7kZaIA4-UZO3NoWlDMr2Ty73Qu0aEXl1bRtJGnfuqdMzWQ2HjUJATz6Yxm6kCEkFoA4Z9Q2XPlvn2hxoHhHx8XETDW0Z8LHLiRTmWny7C2T5tCAn0X2gUoPKw629xUEZhTW9rKzgoleXk-vmJ0tvfKBKKmwFBsUd-TV4MmSc4ueXmdGT8Z8eLbPJ61jOz0cxGa8Ro3VjTjw5VmNR_GMMbcDYs-yQnCqLnE_iHP8RxJH6yw0ZJPJq0jHBgFQyHBEPfVUQlwo' },
-              { name: 'I. A. Viraj Piumal Sangeeth', role: 'Chief Technology Officer & Founder', img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCG1_CkvoI2V5qw0mxRHHxKwM8Se3icoD2GBtfhYDZsZYxe6bxe5xd5bERu2HojcazEh56psTrguyi8t70O4Q5BW8-Kg5EQhQH7PpBry22QldtHPD09wGeKl5Ij_ZT0wXyKnnsGZSbPKhBxv81aYoHE6rP26R6rwGMjllvnBTZ1ZoPSLL-Smf5VUOPwefhYGVKtvVxlYJWmWhKYGSInMPWewgQ2SePrkzqII6M7eOiZmyteOy9PLAHGCnACg7MAmoSwdNJJcOz3Qjg' },
+              { name: 'I. A. Viraj Piumal Sangeeth', role: 'Chief Technology Officer & Founder', img: '/founder_viraj.jpg' },
             ].map((person) => (
               <div key={person.name} className="group bg-surface-container-lowest p-6 rounded-3xl hover:bg-surface-container-low transition-colors duration-300">
                 <div className="aspect-[4/5] rounded-2xl overflow-hidden mb-6">

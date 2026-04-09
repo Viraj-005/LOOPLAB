@@ -15,7 +15,7 @@ export default function HomePage() {
               Future-Ready Technology
             </div>
             <h1 className="font-headline text-6xl md:text-7xl font-bold tracking-tighter text-on-surface leading-[1.05]">
-              <span className="text-primary italic">LoopLab</span> (Private) Limited
+              <span className="text-primary">LoopLab</span> (PVT) LTD
             </h1>
             <p className="text-on-surface-variant text-xl leading-relaxed max-w-xl">
               Developing technology-driven solutions and software applications that address real-world problems through artificial intelligence and intelligent systems.

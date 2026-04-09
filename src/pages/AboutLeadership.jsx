@@ -14,7 +14,7 @@ const leaders = [
   {
     name: 'I. A. Viraj Piumal Sangeeth', role: 'Chief Technology Officer & Founder',
     bio: 'Architecting high-performance AI systems and data analytics frameworks that improve efficiency and decision-making for enterprise-scale operations.',
-    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCG1_CkvoI2V5qw0mxRHHxKwM8Se3icoD2GBtfhYDZsZYxe6bxe5xd5bERu2HojcazEh56psTrguyi8t70O4Q5BW8-Kg5EQhQH7PpBry22QldtHPD09wGeKl5Ij_ZT0wXyKnnsGZSbPKhBxv81aYoHE6rP26R6rwGMjllvnBTZ1ZoPSLL-Smf5VUOPwefhYGVKtvVxlYJWmWhKYGSInMPWewgQ2SePrkzqII6M7eOiZmyteOy9PLAHGCnACg7MAmoSwdNJJcOz3Qjg',
+    img: '/founder_viraj.jpg',
   },
 ];
 

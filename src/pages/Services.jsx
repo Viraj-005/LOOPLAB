@@ -7,7 +7,7 @@ export default function Services() {
       <section className="relative pt-20 pb-32 px-8 overflow-hidden">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-7">
-            <h1 className="font-headline text-6xl md:text-7xl font-bold tracking-tight text-on-surface mb-6 leading-[1.1]">
+            <h1 className="font-headline text-5xl md:text-7xl font-bold tracking-tight text-on-surface mb-6 leading-[1.1]">
               Providing Software Solutions for <span className="text-primary italic">Real World Problems</span>
             </h1>
             <p className="text-xl text-on-surface-variant max-w-2xl mb-10 leading-relaxed">
@@ -21,7 +21,7 @@ export default function Services() {
           </div>
           <div className="lg:col-span-5 relative">
             <div className="aspect-square rounded-[2rem] overflow-hidden shadow-2xl relative z-10 bg-surface-variant border-4 border-white">
-              <img alt="Our Services" className="w-full h-full object-cover" src="/services_hero_1775744004322.png" />
+              <img loading="lazy" alt="Our Services" className="w-full h-full object-cover" src="/services_hero_1775744004322.png" />
             </div>
           </div>
         </div>
@@ -48,7 +48,7 @@ export default function Services() {
               { name: 'Flutter', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg' }
             ].map(stack => (
                <div key={stack.name} className="px-6 py-4 bg-surface-container-lowest border border-outline-variant/10 shadow-sm text-[17px] font-semibold text-primary rounded-xl hover:bg-primary hover:text-on-primary hover:border-primary transition-all cursor-default flex items-center gap-3">
-                  <img src={stack.icon} alt={stack.name} className="w-7 h-7 object-contain" />
+                  <img loading="lazy" src={stack.icon} alt={stack.name} className="w-7 h-7 object-contain" />
                   <span>{stack.name}</span>
                </div>
             ))}

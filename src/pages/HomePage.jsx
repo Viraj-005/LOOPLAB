@@ -14,7 +14,7 @@ export default function HomePage() {
               <span className="material-symbols-outlined text-[14px]">auto_awesome</span>
               Future-Ready Technology
             </div>
-            <h1 className="font-headline text-6xl md:text-7xl font-bold tracking-tighter text-on-surface leading-[1.05]">
+            <h1 className="font-headline text-5xl md:text-7xl font-bold tracking-tighter text-on-surface leading-[1.05]">
               <span className="text-primary">LoopLab</span> (PVT) LTD
             </h1>
             <p className="text-on-surface-variant text-xl leading-relaxed max-w-xl">
@@ -116,16 +116,16 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-8">
           <div className="flex flex-col md:flex-row gap-16 items-center">
             <div className="flex-1 relative order-2 md:order-1">
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="pt-12">
-                  <img
+                  <img loading="lazy"
                     alt="Smart Farming"
                     className="rounded-3xl shadow-lg w-full h-[400px] object-cover"
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzMmFSbZ7gsXGS1rBwYYeDvOf1c6mZjhADlXZPbH3ahORBmFSPSMiPPnd02elBOsxq9RErc5T46aVWdiwyj35F8frG7Zk1aFNtxJ04jvLeJo0Te_Hi2JW7-xGPH_lJLYEZ8KRy65XRw_MNlwrHkTprlvsXrAXlud75kjb2GOMY4RzpUlMUko4Bza8BTqVx3rMlAyWF_YKBSs-Op07xPgWK0naKNJumeZ2baJ_fkHZhtzsTydSedpLOz6N1JNqDyex3NYWTIfZ9Dns"
                   />
                 </div>
                 <div>
-                  <img
+                  <img loading="lazy"
                     alt="Data Monitoring"
                     className="rounded-3xl shadow-lg w-full h-[400px] object-cover"
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJ2NYF46EacWPBpMj4nQ4de345Am5owLp-0IwV9N7BQV_b1CzkSqz5_GNfsaFe1dIwX0E3XpSKiXosVlCF9KxsVOycHuuog1rS068y_SUdnOxAvkbrPxQWr7mlNQq1l6vRwyD4kRf-zzHeFmVFw4XGrIr_zPOLdMmp_EL3mkdVvoxqcZBV9xX0qDX8TTDeWQxe5UJ0pk8_uxf8YlzwOHinRrZQUMqdsmHVFiUJPiYvQkpyRRJfyzNmoBC5DRsBLPWIrtzoZftGVvc"
@@ -136,7 +136,7 @@ export default function HomePage() {
             </div>
             <div className="flex-1 order-1 md:order-2 space-y-6">
               <span className="text-primary font-bold tracking-widest uppercase text-sm">Industrial Impact</span>
-              <h2 className="font-headline text-5xl font-bold tracking-tight text-on-surface leading-tight">Revolutionizing Agriculture with Data Precision</h2>
+              <h2 className="font-headline text-4xl md:text-5xl font-bold tracking-tight text-on-surface leading-tight">Revolutionizing Agriculture with Data Precision</h2>
               <p className="text-on-surface-variant text-lg">Our LoopLab ecosystems are currently optimizing yield cycles for over 50,000 hectares of smart farms. By integrating AI with environmental sensors, we've increased water efficiency by 40%.</p>
               <div className="space-y-4 pt-4">
                 <div className="flex items-start gap-4">

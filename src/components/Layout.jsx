@@ -1,9 +1,11 @@
+import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import logo from '../assets/logo1.png';
 
 export default function Layout({ children }) {
   const location = useLocation();
   const isDashboard = location.pathname === '/candidate-dashboard';
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navLinks = [
     { to: '/services', label: 'Services' },
@@ -20,16 +22,18 @@ export default function Layout({ children }) {
     <div className="flex flex-col min-h-screen">
       {!isDashboard && (
         <nav className="sticky top-0 w-full z-50 bg-white/60 backdrop-blur-xl shadow-sm">
-          <div className="flex justify-between items-center px-8 py-4 max-w-full">
+          <div className="flex justify-between items-center px-4 md:px-8 py-4 max-w-full">
             <div className="navbar-brand">
               <Link to="/">
-                <img
+                <img loading="lazy"
                   src={logo}
                   alt="Company Logo"
-                  className="logo"
+                  className="logo h-10 w-auto"
                 />
               </Link>
             </div>
+
+            {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
               {navLinks.map((link) => (
                 <Link
@@ -44,14 +48,53 @@ export default function Layout({ children }) {
                 </Link>
               ))}
             </div>
-            <div className="flex items-center gap-4">
+
+            <div className="hidden md:flex items-center gap-4">
               <Link to="/careers">
                 <button className="px-6 py-2.5 rounded-lg bg-primary text-on-primary font-bold tracking-tight hover:scale-95 duration-200 transition-all shadow-md">
                   Join Our Team
                 </button>
               </Link>
             </div>
+
+            {/* Mobile Loop Button */}
+            <div className="md:hidden flex items-center">
+              <button
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                className="text-primary hover:text-purple-700 focus:outline-none group bg-primary/10 p-2 rounded-xl transition-all hover:bg-primary/20 hover:shadow-inner"
+              >
+                <span className={`material-symbols-outlined text-3xl transition-transform duration-500 ease-in-out ${isMobileMenuOpen ? 'rotate-[360deg] scale-90' : 'hover:rotate-180 scale-100'}`}>
+                  {isMobileMenuOpen ? 'close' : 'all_inclusive'}
+                </span>
+              </button>
+            </div>
           </div>
+
+          {/* Mobile Navigation Menu */}
+          {isMobileMenuOpen && (
+            <div className="md:hidden absolute top-full left-0 w-full bg-white shadow-lg border-t border-slate-100 flex flex-col pt-2 pb-6 px-4 gap-4 z-40">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.label}
+                  to={link.to}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className={`block py-2 px-4 rounded-lg font-label text-md font-bold transition-all ${isActive(link.to)
+                    ? 'bg-purple-50 text-purple-700'
+                    : 'text-slate-600 hover:bg-slate-50 hover:text-purple-600'
+                    }`}
+                >
+                  {link.label}
+                </Link>
+              ))}
+              <div className="pt-4 border-t border-slate-100 px-4">
+                <Link to="/careers" onClick={() => setIsMobileMenuOpen(false)}>
+                  <button className="w-full py-3 rounded-lg bg-primary text-on-primary font-bold tracking-tight shadow-md">
+                    Join Our Team
+                  </button>
+                </Link>
+              </div>
+            </div>
+          )}
         </nav>
       )}
 

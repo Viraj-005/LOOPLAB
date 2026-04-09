@@ -48,7 +48,7 @@ export default function Projects() {
                 </div>
                 <div className="rounded-[2rem] overflow-hidden shadow-2xl relative">
                     <div className="absolute inset-0 border-4 border-white/20 rounded-[2rem] z-10 pointer-events-none"></div>
-                    <img alt="Sales Framework" className="w-full object-cover aspect-square md:aspect-auto" src="/projects_hero_1775744290672.png" />
+                    <img loading="lazy" alt="Sales Framework" className="w-full object-cover aspect-square md:aspect-auto" src="/projects_hero_1775744290672.png" />
                 </div>
             </div>
          </div>
@@ -77,14 +77,14 @@ export default function Projects() {
                      </ul>
                   </div>
                   <div className="w-full md:w-72 h-72 rounded-2xl overflow-hidden shrink-0 shadow-lg">
-                     <img alt="Healthcare Admin Panel" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="/projects_completed_1775744418460.png" />
+                     <img loading="lazy" alt="Healthcare Admin Panel" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="/projects_completed_1775744418460.png" />
                   </div>
                </div>
 
                {/* YOLO Projects */}
                <div className="bg-surface-container-lowest rounded-[2rem] border border-outline-variant/10 hover:shadow-lg transition-all group overflow-hidden flex flex-col">
                   <div className="h-48 w-full overflow-hidden shrink-0">
-                     <img alt="YOLO Systems" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/services_hero_1775744004322.png" />
+                     <img loading="lazy" alt="YOLO Systems" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/services_hero_1775744004322.png" />
                   </div>
                   <div className="p-8 grow flex flex-col">
                      <span className="material-symbols-outlined text-4xl mb-3 text-on-surface">visibility</span>
@@ -100,7 +100,7 @@ export default function Projects() {
                {/* Gem App */}
                <div className="bg-surface-container-lowest rounded-[2rem] border border-outline-variant/10 hover:shadow-lg transition-all group overflow-hidden flex flex-col">
                   <div className="h-48 w-full overflow-hidden shrink-0 border-b border-surface-variant">
-                     <img alt="Gem App" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/proj_gemtech_1775745712003.png" />
+                     <img loading="lazy" alt="Gem App" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/proj_gemtech_1775745712003.png" />
                   </div>
                   <div className="p-8 grow flex flex-col">
                      <h3 className="font-headline text-2xl font-bold mb-3 mt-2">GemTech App</h3>
@@ -115,7 +115,7 @@ export default function Projects() {
                {/* Classification AI */}
                <div className="bg-surface-container-lowest rounded-[2rem] border border-outline-variant/10 hover:shadow-lg transition-all group overflow-hidden flex flex-col">
                   <div className="h-48 w-full overflow-hidden shrink-0 border-b border-surface-variant">
-                     <img alt="Cognitive Bots" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/proj_cognitive_1775745549923.png" />
+                     <img loading="lazy" alt="Cognitive Bots" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/proj_cognitive_1775745549923.png" />
                   </div>
                   <div className="p-8 grow flex flex-col">
                      <h3 className="font-headline text-2xl font-bold mb-3 mt-2">Cognitive Bots</h3>
@@ -126,7 +126,7 @@ export default function Projects() {
                {/* Image AI */}
                <div className="bg-surface-container-lowest rounded-[2rem] border border-outline-variant/10 hover:shadow-lg transition-all group overflow-hidden flex flex-col">
                   <div className="h-48 w-full overflow-hidden shrink-0 border-b border-surface-variant">
-                     <img alt="Fidelity Engine" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/proj_fidelity_1775745441889.png" />
+                     <img loading="lazy" alt="Fidelity Engine" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/proj_fidelity_1775745441889.png" />
                   </div>
                   <div className="p-8 grow flex flex-col">
                      <h3 className="font-headline text-2xl font-bold mb-3 mt-2">Fidelity Engine</h3>

@@ -10,7 +10,7 @@ export default function CandidateDashboard() {
         </div>
         <div className="mb-10 px-2">
           <div className="flex items-center gap-3 mb-4">
-            <img
+            <img loading="lazy"
               alt="Candidate Profile"
               className="w-10 h-10 rounded-full border-2 border-primary-container"
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRWHXV_AxcFX0j6VczBwag9IVevfGvtZ5L-2z9HzRZ0mm7BpnppyEEfh8iZtpg3-QhUgh5eIHvKB8L8lkgGv2sKdbRYnOO_5DpvOOnSiAg5QZDkWbLrmXy0dvDAPBZ5uK1NUboebMsS3pcnJ9bSGlFjLhc5-ZfE7c2IXHvtzjNfNC1GsmhIR8bCgtvTLF8UsWZRaZI9CExneC4LQwe9WFKOOAKwJ8dIyvqzFtM0wxxiO6O3o74nW9LnHYtSx7dsCzDHgkFGoFLf-4"

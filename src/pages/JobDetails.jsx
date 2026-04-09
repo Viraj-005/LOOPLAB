@@ -135,7 +135,7 @@ export default function JobDetails() {
               </div>
 
               <div className="p-6 rounded-xl bg-surface-container-low flex items-center gap-4">
-                <img
+                <img loading="lazy"
                   className="w-14 h-14 rounded-full object-cover"
                   alt="Sarah Jenkins"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuCf3z71D6ANw1_7ZPIXFi5MYtC1zeDBKWGQZihgrPhGdXq4eY532407bYWhsEtAGyD8o5EvtW1JOZUa71yx8_x-5EpcEyWoZU4qIVkLjB1_TUBULhraYwnvqY6phdw_JbsFR13IMcnJI0MgWza-Uln0YdKakSDhtdVL-0pMSJAo4t_GS86izDqXliMcWZxRmssuP6S8Lu18SqDgUzhN1b4W3jHE6NMb2UaX4Xj9UPYjn4UVywujbEX-ITfwhv0I8oyymlvC8S7qfUY"
@@ -148,7 +148,7 @@ export default function JobDetails() {
               </div>
 
               <div className="rounded-xl overflow-hidden relative aspect-square group">
-                <img
+                <img loading="lazy"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   alt="Modern office"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnIGpXkJLvWbT_cRwFibF49CMmHGHz9nBVO38OEqt3e_JYwtI0O88kiixZuJNvttezBEV3b9dOp6Ds59GXBvdwxn67EeaB8Fg6eENVZeHhuGbbAiio4FhKAgteyQOYmUx0kRtDXDAbO4fl8z8F0gT3uIKWPYy1BiFSftHQvwtHxs7mssN_hrCQhhmTRDGts8Hnm5EVJmncLCHTXoL7BzNGazXSpEKBT5q_tj_dmVXlon5WFY-n7IhPZNvndHSvRY7K7cSa203_wns"

@@ -24,7 +24,7 @@ export default function AboutVision() {
           </div>
           <div className="relative">
             <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl relative z-10">
-              <img
+              <img loading="lazy"
                 className="w-full h-full object-cover"
                 alt="Futuristic digital network visualization"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfWqdAZ9gzNmse1GE6LWqfs3Kx7mwHaw0zy2J37qhFZ42gKmT6NHzIXLRTkfHC2tkREnmjUEKvqlyQAhSvJp3Gjrcq7fH7-omFq_xQ2aeEXL1QckFNH1AJsTqooSEpOE7p_zKNZwTYud1IiFIa6kkRknmQeUu7Pvx1mg1VJiUp6XqKHIvdZKHG_XJLNzeZAgGZVhw0PdWx4TzHnNsefQ8Vyo2BuDMqH-P77j1I6Dbrih0iE5QZpIylkbs6JGLo2NUfkAhfSFqD1C0"
@@ -88,13 +88,13 @@ export default function AboutVision() {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { name: 'S. H. Dinusha Madhujith', role: 'Chief Executive Officer & Founder', img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBmfwkVdLVcA9oslGzO4J8KlT6otnB-3upSIqrP-5a96DzUkQIairPZA9hCBcYygX-sNrj5UiEOFbqXOVmvKLQj8x-2TH995fW5Tc2_JaETlq2AqjJkyosOiQpFspd4bYh3mv23QmWczcnhOwTA-gkyJI4k9llrQb6xejbs6KwFwPz6WYa0iWlo_nVrBYTxa5InBN6xK9zWxM1JCk0LEZItnemUxSHuDeEG41hhxQaz3hwW14fb2Mkzkt4jwtJo3W_Qj9obH9KgJRM' },
-              { name: 'W. Pawani Nimasha', role: 'Director of Social Impact & Founder', img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBnSGjZ7kZaIA4-UZO3NoWlDMr2Ty73Qu0aEXl1bRtJGnfuqdMzWQ2HjUJATz6Yxm6kCEkFoA4Z9Q2XPlvn2hxoHhHx8XETDW0Z8LHLiRTmWny7C2T5tCAn0X2gUoPKw629xUEZhTW9rKzgoleXk-vmJ0tvfKBKKmwFBsUd-TV4MmSc4ueXmdGT8Z8eLbPJ61jOz0cxGa8Ro3VjTjw5VmNR_GMMbcDYs-yQnCqLnE_iHP8RxJH6yw0ZJPJq0jHBgFQyHBEPfVUQlwo' },
-              { name: 'I. A. Viraj Piumal Sangeeth', role: 'Chief Technology Officer & Founder', img: '/founder_viraj.jpg' },
+              { name: 'Dinusha Madhujith', role: 'Chief Executive Officer & Founder', img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBmfwkVdLVcA9oslGzO4J8KlT6otnB-3upSIqrP-5a96DzUkQIairPZA9hCBcYygX-sNrj5UiEOFbqXOVmvKLQj8x-2TH995fW5Tc2_JaETlq2AqjJkyosOiQpFspd4bYh3mv23QmWczcnhOwTA-gkyJI4k9llrQb6xejbs6KwFwPz6WYa0iWlo_nVrBYTxa5InBN6xK9zWxM1JCk0LEZItnemUxSHuDeEG41hhxQaz3hwW14fb2Mkzkt4jwtJo3W_Qj9obH9KgJRM' },
+              { name: 'Pawani Nimasha', role: 'Director of Social Impact & Founder', img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBnSGjZ7kZaIA4-UZO3NoWlDMr2Ty73Qu0aEXl1bRtJGnfuqdMzWQ2HjUJATz6Yxm6kCEkFoA4Z9Q2XPlvn2hxoHhHx8XETDW0Z8LHLiRTmWny7C2T5tCAn0X2gUoPKw629xUEZhTW9rKzgoleXk-vmJ0tvfKBKKmwFBsUd-TV4MmSc4ueXmdGT8Z8eLbPJ61jOz0cxGa8Ro3VjTjw5VmNR_GMMbcDYs-yQnCqLnE_iHP8RxJH6yw0ZJPJq0jHBgFQyHBEPfVUQlwo' },
+              { name: 'Viraj Induruwa', role: 'Chief Technology Officer & Founder', img: '/founder_viraj.jpg' },
             ].map((person) => (
               <div key={person.name} className="group bg-surface-container-lowest p-6 rounded-3xl hover:bg-surface-container-low transition-colors duration-300">
                 <div className="aspect-[4/5] rounded-2xl overflow-hidden mb-6">
-                  <img className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src={person.img} alt={person.name} />
+                  <img loading="lazy" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src={person.img} alt={person.name} />
                 </div>
                 <h4 className="font-headline text-xl font-bold">{person.name}</h4>
                 <p className="text-primary text-sm font-semibold mb-3">{person.role}</p>
@@ -137,7 +137,7 @@ export default function AboutVision() {
               </ul>
             </div>
             <div className="lg:w-1/2 min-h-[400px]">
-              <img
+              <img loading="lazy"
                 className="w-full h-full object-cover"
                 alt="Lush green agricultural terrace field"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuCU5GL_NPb61ZCGcTZnDoQ1ZXITaQk8JVYfju2JMIUaj1m1yeVKwyRurTPdjIWb_24bEiuCgObu9Eu1-w-8cTm6B7R3NW0DYX8fu8PQBw9wgcoGu2ozWKJj_GsENu391qPOPuDyxRQ4z9vN4DlUW6up5cRZAO_ginyS8EO5--MK_3phP4bsPrFFdrnFXaagFtDyG0FaHMZ3EmbjtUy0PnWs0LLgGbEgoheEjxsjn6-eH0M7vRYC--jsp9qMdQzjGcAdJk9vj-PER8w"

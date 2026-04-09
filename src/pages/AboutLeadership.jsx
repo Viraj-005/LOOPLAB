@@ -40,7 +40,7 @@ export default function AboutLeadership() {
           </div>
           <div className="relative">
             <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl relative z-10">
-              <img
+              <img loading="lazy"
                 alt="Futuristic digital network"
                 className="w-full h-full object-cover"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfWqdAZ9gzNmse1GE6LWqfs3Kx7mwHaw0zy2J37qhFZ42gKmT6NHzIXLRTkfHC2tkREnmjUEKvqlyQAhSvJp3Gjrcq7fH7-omFq_xQ2aeEXL1QckFNH1AJsTqooSEpOE7p_zKNZwTYud1IiFIa6kkRknmQeUu7Pvx1mg1VJiUp6XqKHIvdZKHG_XJLNzeZAgGZVhw0PdWx4TzHnNsefQ8Vyo2BuDMqH-P77j1I6Dbrih0iE5QZpIylkbs6JGLo2NUfkAhfSFqD1C0"
@@ -75,7 +75,7 @@ export default function AboutLeadership() {
             {leaders.map((person) => (
               <div key={person.name} className="group glass-card p-6 rounded-[2.5rem] hover:shadow-2xl hover:shadow-primary/10 transition-all duration-500 border border-white/60">
                 <div className="aspect-[4/5] rounded-3xl overflow-hidden mb-8 shadow-inner bg-slate-200">
-                  <img
+                  <img loading="lazy"
                     alt={`Portrait of ${person.name}`}
                     className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100"
                     src={person.img}

@@ -27,7 +27,7 @@ export default function ResearchBlog() {
           </div>
           <div className="md:col-span-5 relative">
             <div className="w-full aspect-square rounded-full kinetic-gradient opacity-10 blur-3xl absolute -top-20 -right-20"></div>
-            <img
+            <img loading="lazy"
               alt="Neural network visualization"
               className="w-full h-[400px] object-cover rounded-xl shadow-2xl"
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCb74IhWiFTMD_anAfQ94EmWeK61bj7rt_8Juzx61Vv2tJr-GSPy6KPElzB-4EtCWRyMXNlVskEK7lORz3366tRh5fiIu6amvKnRw8QR3dr0PgbhzZJmF606eE_imwQfeyZqTOtneJTXs0jjf2-hPLLUTm8Heeo0ssedJyPyNCJrIrVrDsmYwde_jDgLbAFwpU44tGarAYsY1LGrQKFSDJ6BnzAkg7u1GDRV3qdX54UArXdB-eEGW5cQ4dveewry1w6wFKZ1dzTS4"
@@ -41,7 +41,7 @@ export default function ResearchBlog() {
         <h2 className="font-headline text-xs font-bold tracking-widest uppercase text-primary mb-6">Featured Research</h2>
         <div className="group relative bg-surface-container-low rounded-xl overflow-hidden flex flex-col md:flex-row items-center transition-all duration-300 hover:shadow-2xl hover:shadow-primary/5">
           <div className="w-full md:w-3/5 h-[450px] overflow-hidden">
-            <img
+            <img loading="lazy"
               alt="Aerial view of sustainable city"
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuArU2Tomqa-VZpCRkdbG77D-9ilhVIMvBWVirv8hQMNDE373yMLnVXGyqdP7HHfvKRgQlfxHasFX7wyMvZ1yh6wEgRMYlv3Gsb5kWTtIoLlbosEUlxTLYAcasWH7ol-i3p_oq-AeekOfAM_D9FenzGodxKDMkpbhB4dBSoNs98itgss64UBeQDi46JDeAIgqxS7lkcHnQZQfRnI8-tNZ6NFNW64ArHIuD6eTf1XAoFDHpHwohzmf1tPJYpgz4s1PL88vnVRtDl7_9M"
@@ -59,7 +59,7 @@ export default function ResearchBlog() {
               A deep dive into our latest laboratory results showing a 40% increase in sequestration efficiency through algorithmic optimization of biological reactors.
             </p>
             <div className="flex items-center gap-4">
-              <img
+              <img loading="lazy"
                 alt="Researcher profile"
                 className="w-10 h-10 rounded-full object-cover"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEUOnLnZHlEN0QdqvKrY2Wi2EsB9K4sJQT9jR3sLDTy0jFwFJ9P6z-a-dTlPmzC2K5AsmJNTR-DLdRyZ-f1437yANwXW7JiNOtTqFLrsa_YYzR1g347eOvfbTpuZISoUfY7j_hZne79QuPMbjmtOH2ZMbz7EsYdkWrqz5wb4WhX5Vpi3bJN2koh5ogOXeWytc7EJ7ndwE0SEvg3THoomUktAnMI3RCm1QmaMdDMRKsBYEJnJfBoT0WwmBugCvtncwioqWBXSnc_Dk"
@@ -92,7 +92,7 @@ export default function ResearchBlog() {
         {articles.map((article) => (
           <div key={article.title} className="group bg-surface-container-lowest rounded-xl p-4 transition-all hover:bg-surface-container-low border border-transparent hover:border-outline-variant/10">
             <div className="relative mb-6 rounded-lg overflow-hidden h-56">
-              <img alt={article.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src={article.img} />
+              <img loading="lazy" alt={article.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src={article.img} />
               <div className="absolute top-4 left-4">
                 <span className="px-3 py-1 glass-effect text-white text-[10px] font-bold rounded-full uppercase tracking-widest bg-black/20">{article.category}</span>
               </div>
@@ -121,7 +121,7 @@ export default function ResearchBlog() {
             </div>
           </div>
           <div className="w-full md:w-1/2 h-full min-h-[250px] rounded-lg overflow-hidden order-1 md:order-2">
-            <img
+            <img loading="lazy"
               alt="Server room bokeh"
               className="w-full h-full object-cover"
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuAimQZ7s1QNTbwmwKmC-BnMK2_rg0RplAxHqs_VJRry4wOQPHkZk6AMippvWPqkyHzUdvFyNYhZHV4aSACxh_Yb3emWFBBzjATS4T6JLMu4vv5dbmugEZ49SQlu1JK3R86YpkYyfJJRqWyDXVtk3B-5BHhJrQkv3c0rlMV_fGUUzt_xGq3nkVFhHpRUmmEsFOH_3p94Y0-mMYwmSTC1Kb1FRDW8EPj7sM8iK7ZuqlId0rIjCrkOs3qrmtttR4BTHGHeeILsDTkKes"

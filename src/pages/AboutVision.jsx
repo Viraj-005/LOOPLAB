@@ -4,17 +4,17 @@ export default function AboutVision() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative overflow-hidden px-8 pt-24 pb-20 lg:pb-32 max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="z-10">
-            <span className="inline-block py-1 px-3 rounded-full bg-primary-fixed text-on-primary-fixed text-xs font-bold uppercase tracking-widest mb-6">Our Legacy</span>
-            <h1 className="font-headline text-5xl lg:text-7xl font-bold tracking-tighter leading-tight mb-8 text-glow">
+      <section className="relative overflow-hidden px-6 md:px-8 pt-16 md:pt-24 pb-16 lg:pb-32 max-w-7xl mx-auto">
+        <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="z-10 text-center lg:text-left">
+            <span className="inline-block py-1 px-3 rounded-full bg-primary-fixed text-on-primary-fixed text-[10px] sm:text-xs font-bold uppercase tracking-widest mb-6">Our Legacy</span>
+            <h1 className="font-headline text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tighter leading-tight mb-8 text-glow">
               Our Journey into the <span className="text-primary">Future</span>
             </h1>
-            <p className="text-lg lg:text-xl text-on-surface-variant max-w-xl leading-relaxed mb-10">
+            <p className="text-base sm:text-lg lg:text-xl text-on-surface-variant max-w-xl mx-auto lg:mx-0 leading-relaxed mb-10">
               LoopLab (Private) Limited is a powerhouse of engineering excellence. We are dedicated to driving global innovation through technology-driven solutions that address real-world problems.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
               <Link to="/services">
                 <button className="bg-primary text-on-primary px-8 py-4 rounded-xl font-bold flex items-center gap-2 hover:shadow-lg transition-all">
                   Explore Our Tech <span className="material-symbols-outlined">arrow_forward</span>
@@ -37,8 +37,8 @@ export default function AboutVision() {
       </section>
 
       {/* Stats / Milestones */}
-      <section className="px-8 py-16 bg-surface-container-low border-y border-outline-variant/10">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center max-w-7xl mx-auto">
+      <section className="px-6 md:px-8 py-12 md:py-16 bg-surface-container-low border-y border-outline-variant/10">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 text-center max-w-7xl mx-auto">
           {[
             { value: '50+', label: 'Global Projects' },
             { value: '10+', label: 'Countries Served' },
@@ -46,32 +46,32 @@ export default function AboutVision() {
             { value: '24/7', label: 'Neural Support' },
           ].map((stat) => (
             <div key={stat.label}>
-              <p className="font-headline text-5xl lg:text-6xl font-bold text-primary mb-2">{stat.value}</p>
-              <p className="text-on-surface-variant font-medium uppercase tracking-widest text-xs">{stat.label}</p>
+              <p className="font-headline text-3xl sm:text-4xl lg:text-6xl font-bold text-primary mb-2">{stat.value}</p>
+              <p className="text-on-surface-variant font-medium uppercase tracking-[0.1em] text-[10px] sm:text-xs">{stat.label}</p>
             </div>
           ))}
         </div>
       </section>
 
       {/* Mission & Vision */}
-      <section className="px-8 py-24 bg-surface">
+      <section className="px-6 md:px-8 py-16 md:py-24 bg-surface">
         <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-surface-container-lowest p-10 lg:p-16 rounded-[2rem] shadow-sm border border-outline-variant/10 hover:border-primary/20 transition-colors duration-500">
-              <div className="w-14 h-14 bg-primary-fixed flex items-center justify-center rounded-2xl mb-8">
-                <span className="material-symbols-outlined text-primary text-3xl">rocket_launch</span>
+          <div className="grid md:grid-cols-2 gap-6 md:gap-8">
+            <div className="bg-surface-container-lowest p-8 sm:p-10 lg:p-16 rounded-[2rem] shadow-sm border border-outline-variant/10 hover:border-primary/20 transition-colors duration-500">
+              <div className="w-12 h-12 sm:w-14 sm:h-14 bg-primary-fixed flex items-center justify-center rounded-2xl mb-8">
+                <span className="material-symbols-outlined text-primary text-2xl sm:text-3xl">rocket_launch</span>
               </div>
-              <h3 className="font-headline text-3xl font-bold mb-6">Mission</h3>
-              <p className="text-on-surface-variant text-lg leading-relaxed">
+              <h3 className="font-headline text-2xl sm:text-3xl font-bold mb-6">Mission</h3>
+              <p className="text-on-surface-variant text-base sm:text-lg leading-relaxed">
                 To develop technology-driven solutions and software applications that address real-world problems, promoting ethical and responsible project development through intelligent systems.
               </p>
             </div>
-            <div className="hero-gradient p-10 lg:p-16 rounded-[2rem] text-on-primary shadow-xl hover:shadow-2xl transition-shadow duration-500">
-              <div className="w-14 h-14 bg-white/20 flex items-center justify-center rounded-2xl mb-8">
-                <span className="material-symbols-outlined text-white text-3xl">visibility</span>
+            <div className="hero-gradient p-8 sm:p-10 lg:p-16 rounded-[2rem] text-on-primary shadow-xl hover:shadow-2xl transition-shadow duration-500">
+              <div className="w-12 h-12 sm:w-14 sm:h-14 bg-white/20 flex items-center justify-center rounded-2xl mb-8">
+                <span className="material-symbols-outlined text-white text-2xl sm:text-3xl">visibility</span>
               </div>
-              <h3 className="font-headline text-3xl font-bold mb-6">Vision</h3>
-              <p className="text-white/90 text-lg leading-relaxed">
+              <h3 className="font-headline text-2xl sm:text-3xl font-bold mb-6">Vision</h3>
+              <p className="text-white/90 text-base sm:text-lg leading-relaxed">
                 To bridge the gap between research and implementation, reducing digital inequality and empowering communities through data-driven innovation and social impact initiatives.
               </p>
             </div>
@@ -80,29 +80,29 @@ export default function AboutVision() {
       </section>
 
       {/* Social Impact */}
-      <section className="px-8 py-24 bg-surface-container-low">
+      <section className="px-6 md:px-8 py-16 md:py-24 bg-surface-container-low">
         <div className="max-w-7xl mx-auto">
-          <div className="bg-surface-container-lowest rounded-[3rem] overflow-hidden flex flex-col lg:flex-row shadow-xl border border-outline-variant/10 hover:border-primary/20 transition-colors duration-500">
-            <div className="lg:w-1/2 p-12 lg:p-20 flex flex-col justify-center">
-              <span className="text-primary font-bold tracking-[0.2em] text-xs mb-4 uppercase">Beyond Code</span>
-              <h2 className="font-headline text-4xl lg:text-5xl font-bold mb-8">Technology for a <span className="text-primary">Sustainable Earth</span></h2>
-              <p className="text-on-surface-variant text-lg mb-8 leading-relaxed">
+          <div className="bg-surface-container-lowest rounded-[2.5rem] sm:rounded-[3rem] overflow-hidden flex flex-col lg:flex-row shadow-xl border border-outline-variant/10 hover:border-primary/20 transition-colors duration-500">
+            <div className="lg:w-1/2 p-8 sm:p-12 lg:p-20 flex flex-col justify-center text-center lg:text-left">
+              <span className="text-primary font-bold tracking-[0.2em] text-[10px] sm:text-xs mb-4 uppercase">Beyond Code</span>
+              <h2 className="font-headline text-3xl sm:text-4xl lg:text-5xl font-bold mb-8">Technology for a <span className="text-primary">Sustainable Earth</span></h2>
+              <p className="text-on-surface-variant text-base sm:text-lg mb-8 leading-relaxed">
                 LoopLab is committed to a social impact model that prioritizes the planet. Our flagship 'AgriLoop' initiative uses satellite AI to help small-scale farmers optimize crop yields while reducing water usage by 40%.
               </p>
-              <ul className="space-y-4 mb-10">
+              <ul className="space-y-4 mb-10 text-left mx-auto lg:mx-0">
                 {[
                   { icon: 'eco', text: 'Precision irrigation for sustainable farming' },
                   { icon: 'solar_power', text: 'Carbon footprint tracking for global logistics' },
                   { icon: 'psychology', text: 'Open-source AI training for rural education' },
                 ].map((item) => (
-                  <li key={item.icon} className="flex items-center gap-3 font-medium">
+                  <li key={item.icon} className="flex items-center gap-3 font-medium text-sm sm:text-base">
                     <span className="material-symbols-outlined text-primary" style={{ fontVariationSettings: "'FILL' 1" }}>{item.icon}</span>
                     {item.text}
                   </li>
                 ))}
               </ul>
             </div>
-            <div className="lg:w-1/2 min-h-[400px]">
+            <div className="lg:w-1/2 min-h-[300px] sm:min-h-[400px]">
               <img loading="lazy"
                 className="w-full h-full object-cover"
                 alt="Lush green agricultural terrace field"
@@ -114,51 +114,49 @@ export default function AboutVision() {
       </section>
 
       {/* Corporate Registration */}
-      <section className="px-8 py-24 bg-surface relative overflow-hidden">
+      <section className="px-6 md:px-8 py-16 md:py-24 bg-surface relative overflow-hidden">
         {/* Decorative background Elements */}
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[100px] pointer-events-none"></div>
         <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-secondary-container/20 rounded-full blur-[100px] pointer-events-none"></div>
 
         <div className="max-w-7xl mx-auto relative z-10">
-          <div className="bg-surface-container-lowest p-8 lg:p-16 rounded-[3rem] shadow-2xl border border-outline-variant/10 flex flex-col lg:flex-row items-center gap-16 relative overflow-hidden backdrop-blur-xl hover:border-primary/20 transition-colors duration-500">
+          <div className="bg-surface-container-lowest p-6 sm:p-10 lg:p-16 rounded-[2.5rem] sm:rounded-[3rem] shadow-2xl border border-outline-variant/10 flex flex-col lg:flex-row items-center gap-10 lg:gap-16 relative overflow-hidden backdrop-blur-xl hover:border-primary/20 transition-colors duration-500">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-transparent opacity-50 pointer-events-none"></div>
 
-            <div className="lg:w-1/2 relative z-10">
-              <span className="inline-block py-1.5 px-4 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-widest mb-6">Legal Entity</span>
-              <h2 className="font-headline text-4xl lg:text-5xl font-bold mb-6">Official Company Registration</h2>
-              <p className="text-on-surface-variant text-lg leading-relaxed mb-10">
-                LoopLab (Private) Limited is officially recognized and incorporated as a Private Company with Limited Liability under the Companies Act No. 7 of 2007 of the Democratic Socialist Republic of Sri Lanka. We operate with full compliance and transparency to ensure trust and reliability for all our global partners and clients.
+            <div className="w-full lg:w-1/2 relative z-10 text-center lg:text-left">
+              <span className="inline-block py-1.5 px-4 rounded-full bg-primary/10 text-primary text-[10px] sm:text-xs font-bold uppercase tracking-widest mb-6">Legal Entity</span>
+              <h2 className="font-headline text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">Official Company Registration</h2>
+              <p className="text-on-surface-variant text-base sm:text-lg leading-relaxed mb-10 mx-auto lg:mx-0 max-w-xl">
+                LoopLab (Private) Limited is officially recognized and incorporated as a Private Company with Limited Liability under the Companies Act No. 7 of 2007 of the Democratic Socialist Republic of Sri Lanka.
               </p>
-              <div className="bg-surface-container/50 backdrop-blur-md p-8 rounded-[2rem] border border-outline-variant/10 shadow-inner hover:shadow-md transition-shadow duration-300">
+              <div className="bg-surface-container/50 backdrop-blur-md p-6 sm:p-8 rounded-[2rem] border border-outline-variant/10 shadow-inner hover:shadow-md transition-shadow duration-300">
                 <ul className="space-y-6">
-                  <li className="flex justify-between items-center border-b border-outline-variant/10 pb-4">
-                    <span className="font-medium text-on-surface-variant flex items-center gap-3"><span className="material-symbols-outlined text-primary text-[20px]">tag</span> Registration No.</span>
-                    <span className="font-bold text-on-surface text-lg tracking-wide">P V 00356201</span>
+                  <li className="flex flex-col sm:flex-row justify-between items-center border-b border-outline-variant/10 pb-4 gap-2">
+                    <span className="font-medium text-on-surface-variant flex items-center gap-3 text-sm sm:text-base"><span className="material-symbols-outlined text-primary text-[20px]">tag</span> Registration No.</span>
+                    <span className="font-bold text-on-surface text-base sm:text-lg tracking-wide uppercase">P V 00356201</span>
                   </li>
-                  <li className="flex justify-between items-center border-b border-outline-variant/10 pb-4">
-                    <span className="font-medium text-on-surface-variant flex items-center gap-3"><span className="material-symbols-outlined text-primary text-[20px]">event_available</span> Incorporated</span>
-                    <span className="font-bold text-on-surface text-lg">18 February 2026</span>
+                  <li className="flex flex-col sm:flex-row justify-between items-center border-b border-outline-variant/10 pb-4 gap-2">
+                    <span className="font-medium text-on-surface-variant flex items-center gap-3 text-sm sm:text-base"><span className="material-symbols-outlined text-primary text-[20px]">event_available</span> Incorporated</span>
+                    <span className="font-bold text-on-surface text-base sm:text-lg">18 February 2026</span>
                   </li>
-                  <li className="flex justify-between items-center">
-                    <span className="font-medium text-on-surface-variant flex items-center gap-3"><span className="material-symbols-outlined text-primary text-[20px]">location_on</span> Jurisdiction</span>
-                    <span className="font-bold text-on-surface text-lg">Colombo, Sri Lanka</span>
+                  <li className="flex flex-col sm:flex-row justify-between items-center gap-2">
+                    <span className="font-medium text-on-surface-variant flex items-center gap-3 text-sm sm:text-base"><span className="material-symbols-outlined text-primary text-[20px]">location_on</span> Jurisdiction</span>
+                    <span className="font-bold text-on-surface text-base sm:text-lg">Colombo, Sri Lanka</span>
                   </li>
                 </ul>
               </div>
             </div>
             <div className="lg:w-1/2 w-full flex justify-center relative z-10">
-              <div className="relative group rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-white/60 bg-white/40 backdrop-blur-sm p-4 hover:border-primary/30 transition-all duration-500">
-                <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-tertiary/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
-                <div className="absolute top-8 right-8 z-20 bg-white/90 backdrop-blur-md px-4 py-2 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-all duration-500 pointer-events-none flex items-center gap-2 border border-black/5 transform -translate-y-2 group-hover:translate-y-0">
+              <div className="relative group rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-white/60 bg-white/40 backdrop-blur-sm p-4 hover:border-primary/30 transition-all duration-500 max-w-[400px]">
+                <div className="absolute top-8 right-8 z-20 bg-white/90 backdrop-blur-md px-4 py-2 rounded-full shadow-lg flex items-center gap-2 border border-black/5 opacity-100 sm:opacity-0 group-hover:opacity-100 transition-all duration-500 pointer-events-none">
                   <span className="material-symbols-outlined text-primary text-[18px]">verified</span>
-                  <span className="text-xs font-bold text-on-surface uppercase tracking-wider">Verified Document</span>
+                  <span className="text-[10px] font-bold text-on-surface uppercase tracking-wider">Verified</span>
                 </div>
                 <div className="relative rounded-[2rem] overflow-hidden bg-white shadow-inner">
-                  <div className="absolute inset-0 bg-primary/10 mix-blend-color z-10 group-hover:bg-transparent transition-colors duration-500 pointer-events-none"></div>
                   <img loading="lazy"
                     src="/company_certificate.jpg" 
                     alt="LoopLab Certificate of Incorporation"
-                    className="w-[400px] h-[600px] object-contain rounded-xl relative z-0 group-hover:scale-[1.02] transition-transform duration-700 ease-out"
+                    className="w-full h-auto max-h-[500px] object-contain rounded-xl relative z-0 group-hover:scale-[1.02] transition-transform duration-700 ease-out"
                   />
                 </div>
               </div>
@@ -168,19 +166,19 @@ export default function AboutVision() {
       </section>
 
       {/* Leadership Section */}
-      <section className="px-8 py-24 bg-surface-container relative overflow-hidden">
+      <section className="px-6 md:px-8 py-16 md:py-24 bg-surface-container relative overflow-hidden">
         {/* Decorative background Elements */}
         <div className="absolute -top-40 -right-40 w-[600px] h-[600px] bg-primary/10 rounded-full blur-[120px] pointer-events-none"></div>
         <div className="absolute -bottom-40 -left-40 w-[600px] h-[600px] bg-tertiary-container/30 rounded-full blur-[120px] pointer-events-none"></div>
         
         <div className="max-w-7xl mx-auto relative z-10">
-          <div className="text-center mb-20">
-            <span className="inline-block py-1 px-3 rounded-full bg-primary-container text-on-primary-container text-xs font-bold uppercase tracking-widest mb-4">Executive Team</span>
-            <h2 className="font-headline text-4xl lg:text-5xl font-bold mb-6">The Architects of <span className="text-primary">Innovation</span></h2>
-            <p className="text-on-surface-variant max-w-2xl mx-auto text-lg leading-relaxed">A collective of visionaries, engineers, and designers dedicated to the LoopLab philosophy.</p>
+          <div className="text-center mb-12 sm:mb-20">
+            <span className="inline-block py-1 px-3 rounded-full bg-primary-container text-on-primary-container text-[10px] sm:text-xs font-bold uppercase tracking-widest mb-4">Executive Team</span>
+            <h2 className="font-headline text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">The Architects of <span className="text-primary">Innovation</span></h2>
+            <p className="text-on-surface-variant max-w-2xl mx-auto text-base sm:text-lg leading-relaxed">A collective of visionaries, engineers, and designers dedicated to the LoopLab philosophy.</p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-10">
             {[
               { name: 'Dinusha Madhujith', role: 'Chief Executive Officer & Founder', img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBmfwkVdLVcA9oslGzO4J8KlT6otnB-3upSIqrP-5a96DzUkQIairPZA9hCBcYygX-sNrj5UiEOFbqXOVmvKLQj8x-2TH995fW5Tc2_JaETlq2AqjJkyosOiQpFspd4bYh3mv23QmWczcnhOwTA-gkyJI4k9llrQb6xejbs6KwFwPz6WYa0iWlo_nVrBYTxa5InBN6xK9zWxM1JCk0LEZItnemUxSHuDeEG41hhxQaz3hwW14fb2Mkzkt4jwtJo3W_Qj9obH9KgJRM' },
               { name: 'Pawani Nimasha', role: 'Director of Social Impact & Founder', img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBnSGjZ7kZaIA4-UZO3NoWlDMr2Ty73Qu0aEXl1bRtJGnfuqdMzWQ2HjUJATz6Yxm6kCEkFoA4Z9Q2XPlvn2hxoHhHx8XETDW0Z8LHLiRTmWny7C2T5tCAn0X2gUoPKw629xUEZhTW9rKzgoleXk-vmJ0tvfKBKKmwFBsUd-TV4MmSc4ueXmdGT8Z8eLbPJ61jOz0cxGa8Ro3VjTjw5VmNR_GMMbcDYs-yQnCqLnE_iHP8RxJH6yw0ZJPJq0jHBgFQyHBEPfVUQlwo' },
@@ -213,18 +211,18 @@ export default function AboutVision() {
       </section>
 
       {/* CTA Section */}
-      <section className="px-8 py-24 text-center bg-surface">
+      <section className="px-6 md:px-8 py-16 md:py-24 text-center bg-surface">
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-headline text-4xl lg:text-5xl font-bold mb-6">Build the Core with Us</h2>
-          <p className="text-on-surface-variant text-lg mb-10">
+          <h2 className="font-headline text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">Build the Core with Us</h2>
+          <p className="text-on-surface-variant text-base sm:text-lg mb-10 lg:mx-0 max-w-2xl mx-auto">
             We're looking for thinkers, dreamers, and relentless problem-solvers. If you want to define the future of technology, your journey starts here.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/careers">
-              <button className="bg-primary text-on-primary px-10 py-5 rounded-2xl font-bold text-lg hover:shadow-xl transition-all active:scale-95">Join Our Team</button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-stretch sm:items-center">
+            <Link to="/careers" className="w-full sm:w-auto">
+              <button className="w-full bg-primary text-on-primary px-8 py-4 sm:px-10 sm:py-5 rounded-2xl font-bold text-lg hover:shadow-xl transition-all active:scale-95">Join Our Team</button>
             </Link>
-            <Link to="/contact">
-              <button className="bg-tertiary-fixed text-on-tertiary-fixed border border-outline-variant/30 px-10 py-5 rounded-2xl font-bold text-lg hover:bg-tertiary-fixed-dim transition-all">Contact Us</button>
+            <Link to="/contact" className="w-full sm:w-auto">
+              <button className="w-full bg-tertiary-fixed text-on-tertiary-fixed border border-outline-variant/30 px-8 py-4 sm:px-10 sm:py-5 rounded-2xl font-bold text-lg hover:bg-tertiary-fixed-dim transition-all">Contact Us</button>
             </Link>
           </div>
         </div>

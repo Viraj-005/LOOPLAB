@@ -47,17 +47,17 @@ export default function ContactUs() {
   };
 
   return (
-    <main className="pt-32 pb-24 px-6 md:px-12 max-w-7xl mx-auto min-h-screen">
-      <header className="mb-20 text-center md:text-left">
-        <h1 className="font-headline text-5xl md:text-7xl font-bold tracking-tighter text-on-surface mb-6">Get in Touch</h1>
-        <p className="text-on-surface-variant max-w-2xl text-lg font-light leading-relaxed">
+    <main className="pt-24 sm:pt-32 pb-16 md:pb-24 px-6 md:px-8 max-w-7xl mx-auto min-h-screen">
+      <header className="mb-12 md:mb-20 text-center md:text-left">
+        <h1 className="font-headline text-4xl sm:text-5xl md:text-7xl font-bold tracking-tighter text-on-surface mb-6">Get in Touch</h1>
+        <p className="text-on-surface-variant max-w-2xl mx-auto md:mx-0 text-base sm:text-lg font-light leading-relaxed">
           Connect with our research team to explore the next frontier of digital innovation.
         </p>
       </header>
 
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-        <div className="lg:col-span-4 space-y-8">
-          <div className="bg-surface-container-low p-8 rounded-2xl space-y-8 border border-outline-variant/10 shadow-sm">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 items-start">
+        <div className="lg:col-span-4 space-y-6 md:space-y-8">
+          <div className="bg-surface-container-low p-6 sm:p-8 rounded-2xl space-y-8 border border-outline-variant/10 shadow-sm">
             {[
               { icon: 'location_on', title: 'Global HQ', detail: 'No. 74/1, Neelammahara,\nButhpitiya, Mahara' },
               { icon: 'alternate_email', title: 'Email Us', detail: 'looplab888@gmail.com' },
@@ -84,22 +84,22 @@ export default function ContactUs() {
         </div>
 
         <div className="lg:col-span-8">
-          <div className="bg-surface-container-lowest p-8 md:p-12 rounded-3xl shadow-xl border border-outline-variant/10 relative overflow-hidden">
+          <div className="bg-surface-container-lowest p-6 sm:p-8 md:p-12 rounded-3xl shadow-xl border border-outline-variant/10 relative overflow-hidden">
             {status === 'success' ? (
-              <div className="py-12 flex flex-col items-center text-center space-y-8 animate-in fade-in zoom-in duration-500">
-                <div className="w-24 h-24 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-4 relative">
+              <div className="py-8 sm:py-12 flex flex-col items-center text-center space-y-8 animate-in fade-in zoom-in duration-500">
+                <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-4 relative">
                   <div className="absolute inset-0 rounded-full bg-primary/20 animate-ping"></div>
-                  <span className="material-symbols-outlined text-5xl relative z-10" style={{ fontVariationSettings: "'FILL' 1" }}>check_circle</span>
+                  <span className="material-symbols-outlined text-4xl sm:text-5xl relative z-10" style={{ fontVariationSettings: "'FILL' 1" }}>check_circle</span>
                 </div>
                 <div>
-                  <h2 className="font-headline text-4xl font-bold text-on-surface mb-4">Message Deployed Successfully</h2>
-                  <p className="text-on-surface-variant text-lg max-w-sm mx-auto">
+                  <h2 className="font-headline text-2xl sm:text-4xl font-bold text-on-surface mb-4">Message Deployed Successfully</h2>
+                  <p className="text-on-surface-variant text-base sm:text-lg max-w-sm mx-auto">
                     Your transmission has been received. Our intelligence team will analyze and respond within 24 hours.
                   </p>
                 </div>
                 <button 
                   onClick={() => setStatus('idle')}
-                  className="bg-surface-container-low text-primary px-8 py-4 rounded-xl font-bold hover:bg-primary hover:text-on-primary transition-all shadow-sm border border-primary/20"
+                  className="w-full sm:w-auto bg-surface-container-low text-primary px-8 py-4 rounded-xl font-bold hover:bg-primary hover:text-on-primary transition-all shadow-sm border border-primary/20"
                 >
                   Send Another Message
                 </button>
@@ -187,8 +187,8 @@ export default function ContactUs() {
         </div>
       </div>
 
-      <section className="mt-24">
-        <div className="relative w-full h-[500px] rounded-[3rem] overflow-hidden shadow-2xl bg-surface-container-low border border-outline-variant/10">
+      <section className="mt-16 md:mt-24">
+        <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] rounded-[2.5rem] sm:rounded-[3rem] overflow-hidden shadow-2xl bg-surface-container-low border border-outline-variant/10">
           <iframe 
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63383.769104953535!2d79.8416537046432!3d6.832234802946894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25bbec8dcb3cf%3A0xc4098ad103334b6b!2sLoopLab!5e0!3m2!1sen!2slk!4v1775747899895!5m2!1sen!2slk" 
             className="w-full h-full border-0 grayscale hover:grayscale-0 transition-all duration-1000" 
@@ -196,7 +196,7 @@ export default function ContactUs() {
             loading="lazy" 
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
-          <div className="absolute inset-0 pointer-events-none border-[12px] border-white/5 rounded-[3rem]"></div>
+          <div className="absolute inset-0 pointer-events-none border-[8px] sm:border-[12px] border-white/5 rounded-[2.5rem] sm:rounded-[3rem]"></div>
         </div>
       </section>
     </main>

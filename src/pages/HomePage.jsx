@@ -1,69 +1,83 @@
 import { Link } from 'react-router-dom';
-import aiVideo from '../assets/ai.mp4';
 import ParticleBackground from '../components/ParticleBackground';
+import { useState, useEffect } from 'react';
 
 export default function HomePage() {
+  const [, setIsVideoMounted] = useState(false);
+
+  useEffect(() => {
+    // Defer video loading until after the initial DOM paint 
+    // to ensure the 32MB video doesn't block page load.
+    const timer = setTimeout(() => {
+      setIsVideoMounted(true);
+    }, 50);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <>
       {/* Hero Section */}
-      <section className="relative overflow-hidden pt-20 pb-32 px-8">
-        <ParticleBackground />
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
-          <div className="flex-1 space-y-8 z-10">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold tracking-widest uppercase">
-              <span className="material-symbols-outlined text-[14px]">auto_awesome</span>
+      <section className="relative overflow-hidden min-h-[90vh] flex items-center justify-center px-8 border-b border-white/10">
+        {/* Full Section Background Video */}
+        <div className="absolute inset-0 z-0 bg-black">
+          {/* Overlay to ensure text readability */}
+          <div className="absolute inset-0 bg-surface/70 mix-blend-multiply z-10 pointer-events-none"></div>
+          {/* Primary color wash for a premium tech feel */}
+          <div className="absolute inset-0 bg-primary/20 mix-blend-color z-10 pointer-events-none"></div>
+          {/* Bottom fade out to smoothly transition to next section */}
+          <div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent pointer-events-none z-10"></div>
+          
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover opacity-70 transform scale-100 hover:scale-105 transition-transform duration-[10s] ease-out"
+          >
+            <source src="/hero_video.mp4" type="video/mp4" />
+          </video>
+        </div>
+        
+        {/* Particles floating over the video */}
+        <div className="absolute inset-0 z-10 pointer-events-none opacity-60">
+          <ParticleBackground />
+        </div>
+
+        <div className="max-w-5xl mx-auto text-center relative z-20 flex flex-col items-center gap-8 py-32 mt-12">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md text-white text-xs font-bold tracking-widest uppercase border border-white/20 shadow-2xl">
+              <span className="material-symbols-outlined text-[16px] text-primary-container">auto_awesome</span>
               Future-Ready Technology
             </div>
-            <h1 className="font-headline text-5xl md:text-7xl font-bold tracking-tighter text-on-surface leading-[1.05]">
-              <span className="text-primary">LoopLab</span> (PVT) LTD
+            <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-white leading-[1.1] drop-shadow-2xl">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">LoopLab</span> (PVT) LTD
             </h1>
-            <p className="text-on-surface-variant text-xl leading-relaxed max-w-xl">
+            <p className="text-white/80 text-xl md:text-2xl leading-relaxed max-w-3xl drop-shadow-md">
               Developing technology-driven solutions and software applications that address real-world problems through artificial intelligence and intelligent systems.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-4 justify-center mt-6">
               <Link to="/services">
-                <button className="hero-gradient text-on-primary px-8 py-4 rounded-xl font-bold text-lg shadow-xl hover:translate-y-[-2px] transition-transform">
+                <button className="bg-primary text-on-primary px-10 py-5 rounded-xl font-bold text-lg shadow-[0_0_30px_rgba(var(--color-primary),0.5)] hover:bg-primary-container hover:text-on-primary-container hover:scale-105 transition-all outline outline-1 outline-white/20">
                   Explore Services
                 </button>
               </Link>
               <Link to="/careers">
-                <button className="bg-tertiary-fixed text-on-tertiary-fixed px-8 py-4 rounded-xl font-bold text-lg border border-outline-variant/15 hover:bg-tertiary-fixed-dim transition-colors">
+                <button className="bg-white/5 backdrop-blur-md text-white px-10 py-5 rounded-xl font-bold text-lg border border-white/20 hover:bg-white/20 hover:scale-105 transition-all shadow-xl">
                   Join Our Team
                 </button>
               </Link>
             </div>
-          </div>
-          <div className="flex-1 relative">
-            <div className="w-full aspect-square rounded-[3rem] overflow-hidden shadow-2xl relative group">
-              <video
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
-              >
-                <source src={aiVideo} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent"></div>
-            </div>
-            {/* Floating Element */}
-            <div className="absolute -bottom-8 -left-8 glass-effect bg-white/60 p-6 rounded-2xl shadow-xl max-w-xs border border-white/40">
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+            
+            {/* Reintroduced floating element converted to a centered stat badge */}
+            <div className="mt-8 inline-flex items-center gap-4 bg-white/5 border border-white/10 backdrop-blur-md px-6 py-4 rounded-2xl shadow-2xl">
+                <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center text-primary-container border border-primary/30">
                   <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>cycle</span>
                 </div>
-                <div>
-                  <p className="text-xs font-bold text-slate-500 uppercase tracking-widest">Global Impact</p>
-                  <p className="text-lg font-bold text-on-surface font-headline leading-none">1.2M+ Cycles</p>
+                <div className="text-left">
+                  <p className="text-xs font-bold text-white/60 uppercase tracking-widest">Global Impact</p>
+                  <p className="text-lg font-bold text-white font-headline leading-none">1.2M+ Cycles</p>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-        {/* Decorative Gradient Blobs */}
-        <div className="absolute -top-24 -right-24 w-96 h-96 bg-primary/10 rounded-full blur-[100px] -z-10"></div>
-        <div className="absolute top-1/2 -left-24 w-64 h-64 bg-secondary/10 rounded-full blur-[80px] -z-10"></div>
       </section>
 
       {/* Services Bento Grid */}

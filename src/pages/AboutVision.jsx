@@ -181,7 +181,7 @@ export default function AboutVision() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-10">
             {[
               { name: 'Dinusha Madhujith', role: 'Chief Executive Officer & Founder', img: '/founder_dinusha.jpeg' },
-              { name: 'Pawani Nimasha', role: 'Director of Social Impact & Founder', img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBnSGjZ7kZaIA4-UZO3NoWlDMr2Ty73Qu0aEXl1bRtJGnfuqdMzWQ2HjUJATz6Yxm6kCEkFoA4Z9Q2XPlvn2hxoHhHx8XETDW0Z8LHLiRTmWny7C2T5tCAn0X2gUoPKw629xUEZhTW9rKzgoleXk-vmJ0tvfKBKKmwFBsUd-TV4MmSc4ueXmdGT8Z8eLbPJ61jOz0cxGa8Ro3VjTjw5VmNR_GMMbcDYs-yQnCqLnE_iHP8RxJH6yw0ZJPJq0jHBgFQyHBEPfVUQlwo' },
+              { name: 'Pawani Nimasha', role: 'Director of Social Impact & Founder', img: '/founder_pawani.jpg' },
               { name: 'Viraj Induruwa', role: 'Chief Technology Officer & Founder', img: '/founder_viraj.jpg' },
             ].map((person) => (
               <div key={person.name} className="group relative bg-surface-container-lowest p-5 lg:p-6 rounded-[2.5rem] shadow-lg hover:shadow-2xl transition-all duration-500 border border-outline-variant/20 hover:-translate-y-2 hover:border-primary/40 overflow-hidden">

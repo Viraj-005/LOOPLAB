@@ -1,0 +1,78 @@
+export default function PrivacyPolicy() {
+  return (
+    <div className="bg-slate-50 min-h-screen py-24 font-body">
+      <div className="max-w-4xl mx-auto px-6 md:px-12 bg-white rounded-3xl shadow-xl p-8 md:p-16 border border-slate-100">
+        <h1 className="text-4xl md:text-5xl font-headline font-bold text-slate-900 mb-8 tracking-tight">
+          Privacy Policy
+        </h1>
+        <p className="text-slate-500 mb-12 text-sm font-medium uppercase tracking-wider">
+          Last Updated: April 2026
+        </p>
+
+        <div className="space-y-8 text-slate-600 leading-relaxed">
+          <section>
+            <h2 className="text-2xl font-bold text-slate-800 mb-4 tracking-tight">1. Introduction</h2>
+            <p>
+              Welcome to LoopLab. We respect your privacy and are committed to protecting your personal data.
+              This privacy policy will inform you how we look after your personal data when you visit our website
+              and tell you about your privacy rights and how the law protects you.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold text-slate-800 mb-4 tracking-tight">2. The Data We Collect</h2>
+            <p className="mb-4">
+              We may collect, use, store and transfer different kinds of personal data about you which we have
+              grouped together as follows:
+            </p>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>Identity Data: first name, last name, username or similar identifier.</li>
+              <li>Contact Data: billing address, delivery address, email address and telephone numbers.</li>
+              <li>Technical Data: internet protocol address, login data, browser type and version, time zone setting, operating system and platform.</li>
+              <li>Usage Data: information about how you use our website, products and services.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold text-slate-800 mb-4 tracking-tight">3. How We Use Your Data</h2>
+            <p>
+              We will only use your personal data when the law allows us to. Most commonly, we will use your
+              personal data in the following circumstances:
+            </p>
+            <ul className="list-disc pl-6 mt-4 space-y-2">
+              <li>Where we need to perform the contract we are about to enter into or have entered into with you.</li>
+              <li>Where it is necessary for our legitimate interests and your fundamental rights do not override those interests.</li>
+              <li>Where we need to comply with a legal obligation.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold text-slate-800 mb-4 tracking-tight">4. Data Security</h2>
+            <p>
+              We have put in place appropriate security measures to prevent your personal data from being accidentally
+              lost, used or accessed in an unauthorized way, altered or disclosed. We limit access to your personal
+              data to those employees, agents, contractors and other third parties who have a business need to know.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold text-slate-800 mb-4 tracking-tight">5. Your Legal Rights</h2>
+            <p>
+              Under certain circumstances, you have rights under data protection laws in relation to your personal data,
+              including the right to request access, correction, erasure, restriction, transfer, to object to processing,
+              to portability of data and to withdraw consent where applicable.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold text-slate-800 mb-4 tracking-tight">6. Contact Us</h2>
+            <p>
+              If you have any questions about this privacy policy or our privacy practices, please contact us
+              at info@looplab.lk or visit our Contact page.
+            </p>
+          </section>
+        </div>
+      </div>
+    </div>
+  );
+}

@@ -135,14 +135,14 @@ export default function HomePage() {
                   <img loading="lazy"
                     alt="Smart Farming"
                     className="rounded-3xl shadow-lg w-full h-[250px] sm:h-[400px] object-cover"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzMmFSbZ7gsXGS1rBwYYeDvOf1c6mZjhADlXZPbH3ahORBmFSPSMiPPnd02elBOsxq9RErc5T46aVWdiwyj35F8frG7Zk1aFNtxJ04jvLeJo0Te_Hi2JW7-xGPH_lJLYEZ8KRy65XRw_MNlwrHkTprlvsXrAXlud75kjb2GOMY4RzpUlMUko4Bza8BTqVx3rMlAyWF_YKBSs-Op07xPgWK0naKNJumeZ2baJ_fkHZhtzsTydSedpLOz6N1JNqDyex3NYWTIfZ9Dns"
+                    src="/smart_farming.png"
                   />
                 </div>
                 <div>
                   <img loading="lazy"
                     alt="Data Monitoring"
                     className="rounded-3xl shadow-lg w-full h-[250px] sm:h-[400px] object-cover"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJ2NYF46EacWPBpMj4nQ4de345Am5owLp-0IwV9N7BQV_b1CzkSqz5_GNfsaFe1dIwX0E3XpSKiXosVlCF9KxsVOycHuuog1rS068y_SUdnOxAvkbrPxQWr7mlNQq1l6vRwyD4kRf-zzHeFmVFw4XGrIr_zPOLdMmp_EL3mkdVvoxqcZBV9xX0qDX8TTDeWQxe5UJ0pk8_uxf8YlzwOHinRrZQUMqdsmHVFiUJPiYvQkpyRRJfyzNmoBC5DRsBLPWIrtzoZftGVvc"
+                    src="/data_monitoring.png"
                   />
                 </div>
               </div>
